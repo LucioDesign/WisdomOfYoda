@@ -1,0 +1,1 @@
+una app que te permita extraer frases (consejos) de una API y esos consejos se "traduzcan" a como lo diría Yoda usando otra API
