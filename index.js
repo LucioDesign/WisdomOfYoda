@@ -18,7 +18,7 @@ function getURL(text) {                   // API URL builder function
  function frase(YodaUrl){
     fetch(CUOTE_API_URL).then((response)=>response.json()).then((tip)=>{
         advice = tip.slip.advice
-        heroText.innerHTML = `"${advice}"`;
+//        heroText.innerHTML = `"${advice}"`;
     function errorHandler(error) {
         alert("Yoda is tired, try again later (API call limit exceeded).");  // Error handling function 
          }
