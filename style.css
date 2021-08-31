@@ -14,7 +14,7 @@ body{
 
     color:azure;
 }
-.hero-text {
+.hero-content {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -22,12 +22,21 @@ body{
     transform: translate(-50%, -50%);
     color: white;
   }
-  h1{
-      font-size:4rem;
+  #hero-title{
+      font-size:5rem;
       font-weight:lighter;
       margin-top: 15px;
       margin-bottom: 15px;
   }
+  #hero-text{
+    visibility: hidden;
+    font-size:2.5rem;
+    font-weight:lighter;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#hero-text:before { content: open-quote; visibility: hidden;}
+#hero-text:after  { content: close-quote; visibility: hidden;}
 
 #btn {
 	background-color:#00000042;
