@@ -29,14 +29,15 @@ function getURL(text) {                   // API URL builder function
           let translatedtext = json.contents.translated;
           advice = translatedtext;
           console.log(advice);
+          heroText.innerHTML = `"${advice}"`;
+        //  return advice = translatedtext
         })
         .catch(errorHandler);
     }
-    translate();
+    //translate();
     //document.getElementById('hero-title').id = 'hero-title';
     heroText.style.fontSize = "2.5rem";
-    console.log(translate.translatedtext);
-    heroText.innerHTML = `"${translate.translatedtext}"`; /*cambie esto pero no esta probado (antes era solo ${advice}, pero no se actualizaba el valor)*/
+    heroText.innerHTML = `"${advice}"`;
     btn.innerHTML = `ask again`;
     console.log(advice);
 })
