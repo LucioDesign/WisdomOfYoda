@@ -18,6 +18,7 @@ function getURL(text) {                   // API URL builder function
  function frase(YodaUrl){
     fetch(CUOTE_API_URL).then((response)=>response.json()).then((tip)=>{
         advice = tip.slip.advice
+    
     function errorHandler(error) {
         alert("Yoda is tired, try again later (API call limit exceeded).");  // Error handling function 
          }
@@ -28,14 +29,14 @@ function getURL(text) {                   // API URL builder function
           let translatedtext = json.contents.translated;
           advice = translatedtext;
           console.log(advice);
-          return advice = translatedtext;
         })
         .catch(errorHandler);
     }
-//   translate();
+    translate();
     //document.getElementById('hero-title').id = 'hero-title';
     heroText.style.fontSize = "2.5rem";
-    heroText.innerHTML = `"${advice}"`;
+    console.log(translate.translatedtext);
+    heroText.innerHTML = `"${translate.translatedtext}"`; /*cambie esto pero no esta probado (antes era solo ${advice}, pero no se actualizaba el valor)*/
     btn.innerHTML = `ask again`;
     console.log(advice);
 })
