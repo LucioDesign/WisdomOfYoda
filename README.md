@@ -3,5 +3,5 @@ just a fun api javascript project
 
 -------------------------------------------------------------
 
-Try it yourself!👇
+Try it yourself👉
 https://wisdomofyoda.netlify.app/
