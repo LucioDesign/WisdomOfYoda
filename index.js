@@ -33,7 +33,7 @@ function getURL(text) {                   // API URL builder function
         })
         .catch(errorHandler);
     }
-    //translate();
+    translate();
     heroText.style.fontSize = "2.5rem";
     btn.innerHTML = `ask again`;
     console.log(advice);
