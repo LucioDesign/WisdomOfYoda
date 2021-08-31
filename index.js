@@ -9,7 +9,7 @@ const heroText = document.getElementById("hero-title");
 let advice;
 
   // calling for translation
-const getURL = (text) => `"${YODA_API_URL}?text=${text}"`;
+const getURL = (text) => `${YODA_API_URL}?text=${text}`;
 
   // Error handling function
 const errorHandler = (error) => {
