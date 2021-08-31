@@ -14,11 +14,11 @@ btn.onclick = frase;
 function getURL(text) {                   // API URL builder function
     return YODA_API_URL + "?" + "text=" + text;
   }
-//const advice;
+
  function frase(YodaUrl){
     fetch(CUOTE_API_URL).then((response)=>response.json()).then((tip)=>{
         advice = tip.slip.advice
-    
+        heroText.innerHTML = `"${advice}"`;
     function errorHandler(error) {
         alert("Yoda is tired, try again later (API call limit exceeded).");  // Error handling function 
          }
@@ -30,14 +30,11 @@ function getURL(text) {                   // API URL builder function
           advice = translatedtext;
           console.log(advice);
           heroText.innerHTML = `"${advice}"`;
-        //  return advice = translatedtext
         })
         .catch(errorHandler);
     }
     //translate();
-    //document.getElementById('hero-title').id = 'hero-title';
     heroText.style.fontSize = "2.5rem";
-    heroText.innerHTML = `"${advice}"`;
     btn.innerHTML = `ask again`;
     console.log(advice);
 })
